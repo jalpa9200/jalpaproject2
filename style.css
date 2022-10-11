@@ -1,35 +1,19 @@
 body {
-    margin: auto;
+    margin: 0px 0px;
 }
 
 a {
     text-decoration: none;
 }
 
-header {
+.header {
     height: 80px;
     width: 100%;
     background-color: #830047;
 }
 
-.pink {
-    background-color: #830047;
-}
-
-.rounded-pill {
-    height: 70px;
-    margin-left: 20%;
-}
-
-/**.d-flex{
-    display: inline-flex !important;
-    width: 440px;
-    margin-left: 13%;
-}**/
 .pink2 {
-    display: inline-flex !important;
-    width: 440px;
-    margin-left: 95%;
+    width: 400px;
 }
 
 .try {
@@ -40,50 +24,30 @@ header {
 .try:hover {
     background-color: rgb(83, 8, 48);
 }
-.social-links{
-    font-size: 31px;
-    margin: 10px 14px;
-}
-.social-links .wishlist{
- color:#ebda7b !important;
- padding: 0px 10px;
-}
-/**#social .social-links a i:hover{
-    animation: rotate 1s linear;
-}
-@keyframes rotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}**/
-.social-links .cart{
- color:#ebda7b !important;
- padding: 0px 10px;
-}
-.social-links .account{
- color:#ebda7b !important;
- padding: 0px 10px;
-}
-li{
-    list-style-type: none;
-}
-.dropdown-hover:hover>.dropdown-menu {
-display: inline-block;
+
+.social-links {
+    font-size: 24px;
+    margin: 5px 0px;
 }
 
-.dropdown-hover>.dropdown-toggle:active {
-/*Without this, clicking will make it sticky*/
-pointer-events: none;
+.social-links .wishlist {
+    color: #ebda7b !important;
+    padding: 0px 10px;
 }
+
+.social-links .cart {
+    color: #ebda7b !important;
+    padding: 0px 10px;
+}
+
+.social-links .account {
+    color: #ebda7b !important;
+    padding: 0px 10px;
+}
+
 #roop {
-    height: 600px;
-    /**border: 2px solid green;**/
+    height: auto;
+
 }
 
 .pari {
@@ -92,20 +56,12 @@ pointer-events: none;
 
 #categories {
     height: auto;
-    /**border: 2px solid orange;**/
 }
 
 .catego {
     margin-top: 2%;
 }
 
-/**.catego h4{
-    display: flex;
-    flex-direction: row; 
-     font-size: 34px;
-    font-family: cursive;
-    color: #ad3375;
-}**/
 .catego h4 {
     text-align: center;
     font-size: 34px;
@@ -115,14 +71,9 @@ pointer-events: none;
 
 .catego h4:before,
 h4:after {
-    /**content: "";
-    flex: 1 1;
-    border-bottom: 1px solid;
-    margin: auto;**/
     content: '\00a0\00a0\00a0\00a0';
     text-decoration: line-through;
     margin: auto 0.5em;
-
 }
 
 .catego h4:before {
@@ -136,7 +87,7 @@ h4:after {
 .categomain {
     margin: 10px 30px;
     /**border: 1px solid black;**/
-    height: 485px;
+    /**height: 485px;**/
 }
 
 .cate1 {
@@ -307,7 +258,7 @@ h5.card-title {
     height: 396px;
 }
 
-#adverties {
+adverties {
     /**height: 400px;**/
     height: auto;
     /**border: 2px solid firebrick;**/
@@ -401,11 +352,6 @@ h5.card-title {
 .kite {
     border-radius: 15px;
     margin-top: 2%;
-}
-
-#connection {
-    height: 400px;
-    border: 2px solid tomato;
 }
 
 #footer {
@@ -547,4 +493,108 @@ h5.card-title {
 
 .credits a {
     color: #f1db5e;
+}
+
+#coupon {
+    background: linear-gradient(180deg, #f8d8d9, #f2a7a7);
+    z-index: 100;
+    visibility: hidden;
+    height: 550px;
+    width: 60%;
+    margin-left: 20%;
+    position: fixed;
+    border-radius: 10px;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 3px;
+    height: 8%;
+    width: 5%;
+    color: black;
+}
+
+.btn-group-sm>.btn,
+.btn-sm:hover {
+    background-color: #e71010;
+    color: white;
+}
+
+#couponHeading {
+    text-align: center;
+    /*color: #daa82b;*/
+    color: #e7982ade;
+    font-size: 35px;
+    margin-top: 1%;
+    font-family: Georgia;
+}
+
+#offer {
+    height: 400px;
+    width: 90%;
+    margin-left: 6%;
+    /*border:1px solid orange;*/
+}
+
+#main {
+    background-color: orange;
+    margin-top: 0%;
+}
+
+.last {
+    background-color: #830047;
+}
+#main9{
+   height: 100%;
+}
+#offerimage {
+    width: 50%;
+    height: 350px;
+    float: left;
+    margin-top: 5%;
+}
+
+#offerDetail {
+    width: 55%;
+    height: 350px;
+    margin-left: 48%;
+    padding-left: 5%;
+}
+
+#offerDetail h3 {
+    float: right;
+    line-height: 1.5;
+    font-size: 32px;
+    margin-top: 12%;
+    font-family: geogia;
+    color: #830047;
+}
+
+#imagestyle {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+#offerDetail p {
+    color: #616A6B;
+    margin-top: -3%;
+}
+
+#offerDetail h5 {
+    color: #1E8449;
+    margin-bottom: 6%;
+}
+
+#offerDetail h4 {
+    color: #C0392B;
+    font-family: Georgia;
+}
+
+#offerDetail h4::after {
+    content: none;
 }
