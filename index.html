@@ -2,15 +2,22 @@
 
 <head>
     <title>Diamond Dreams</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="home.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,17 +29,19 @@
         <nav class="navbar navbar-light header" id="nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="https://i.ibb.co/M1FvV6S/logo.png" alt="logo" width="120" height="70" class="d-inline-block align-text-top">
+                    <img src="https://i.ibb.co/M1FvV6S/logo.png" alt="logo" width="120" height="70"
+                        class="d-inline-block align-text-top">
                 </a>
                 <div class="align-self-center mx-auto">
                     <form class="d-flex">
-                        <input class="form-control me-2 pink2" type="search" placeholder="Search your Jewellery and more..." width="80" aria-label="Search">
+                        <input class="form-control me-2 pink2" type="search"
+                            placeholder="Search your Jewellery and more..." width="80" aria-label="Search">
                         <button class="btn try" type="submit">Search</button>
                     </form>
                 </div>
-               
+
                 <div id="social">
-                    <div class="social-links mb-3">
+                    <div class="social-links mb-4">
                         <a href="#" class="wishlist">
                             <i class="bi bi-heart"></i>
                         </a>
@@ -43,10 +52,18 @@
                             <i class="bi bi-person-circle"></i>
                         </a>
                     </div>
+                    <!--geolocation-->
+                    <div class="location">
+                        <img onClick="geolocation()" img src='https://i.ibb.co/ngpCfkG/we3.png' />
+                        <p id="out" style="color: #ffffff;"></p>
+                        <p id="weatherOut" style="color: #ffffff;"></p>
+                    </div>
                 </div>
-                <div class="theme-container shadow-light">
+
+                <!--light-dark-->
+                <!-- <div class="theme-container shadow-light">
                     <img id="theme-icon"    src="https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg" alt="ERR">
-                  </div>
+                  </div> -->
             </div>
         </nav>
 
@@ -93,14 +110,16 @@
                         <img src="https://i.ibb.co/KXxKyMw/no-8.jpg" class="d-block w-100 pari" alt="img8">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
 
@@ -115,7 +134,8 @@
                     <div class="row row-cols-1 row-cols-md-6 g-7">
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/XzhppyK/bangels.png" class="card-img-top catecom2" alt="bangles">
+                                <img src="https://i.ibb.co/XzhppyK/bangels.png" class="card-img-top catecom2"
+                                    alt="bangles">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Bangels</h5>
                                     <div class="middle">
@@ -127,7 +147,8 @@
 
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/BNTH5hj/earing.jpg" class="card-img-top catecom2" alt="earing">
+                                <img src="https://i.ibb.co/BNTH5hj/earing.jpg" class="card-img-top catecom2"
+                                    alt="earing">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Earring</h5>
                                     <div class="middle">
@@ -139,7 +160,8 @@
 
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/z4kXRYK/gold-coin.jpg" class="card-img-top catecom2" alt="coin">
+                                <img src="https://i.ibb.co/z4kXRYK/gold-coin.jpg" class="card-img-top catecom2"
+                                    alt="coin">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Gold Coin</h5>
                                     <div class="middle">
@@ -151,7 +173,8 @@
 
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/FJLMfBQ/necklace.jpg" class="card-img-top catecom2" alt="necklace">
+                                <img src="https://i.ibb.co/FJLMfBQ/necklace.jpg" class="card-img-top catecom2"
+                                    alt="necklace">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Necklace</h5>
                                     <div class="middle">
@@ -163,7 +186,8 @@
 
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/LPJyK77/bracelets.jpg" class="card-img-top catecom2" alt="bracelets">
+                                <img src="https://i.ibb.co/LPJyK77/bracelets.jpg" class="card-img-top catecom2"
+                                    alt="bracelets">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Bracelets</h5>
                                     <div class="middle">
@@ -175,7 +199,8 @@
 
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/TB0MMcs/pendants.jpg" class="card-img-top catecom2" alt="pendants">
+                                <img src="https://i.ibb.co/TB0MMcs/pendants.jpg" class="card-img-top catecom2"
+                                    alt="pendants">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Pendants</h5>
                                     <div class="middle">
@@ -187,7 +212,8 @@
 
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/2P278Qb/engagement-ring.jpg" class="card-img-top catecom2" alt="engagement-ring">
+                                <img src="https://i.ibb.co/2P278Qb/engagement-ring.jpg" class="card-img-top catecom2"
+                                    alt="engagement-ring">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Engagement-Ring</h5>
                                     <div class="middle">
@@ -199,7 +225,8 @@
 
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/7GqfX5D/mangalsutra.jpg" class="card-img-top catecom2" alt="mangalsutra">
+                                <img src="https://i.ibb.co/7GqfX5D/mangalsutra.jpg" class="card-img-top catecom2"
+                                    alt="mangalsutra">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Mangalsutra</h5>
                                     <div class="middle">
@@ -223,7 +250,8 @@
 
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/6H9Zjm6/pendant-errings-set.png" class="card-img-top catecom2" alt="pendant errings set">
+                                <img src="https://i.ibb.co/6H9Zjm6/pendant-errings-set.png"
+                                    class="card-img-top catecom2" alt="pendant errings set">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Pendant Earring Set</h5>
                                     <div class="middle">
@@ -235,7 +263,8 @@
 
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/R9QXX8M/nose-pin.jpg" class="card-img-top catecom2" alt="nose pin">
+                                <img src="https://i.ibb.co/R9QXX8M/nose-pin.jpg" class="card-img-top catecom2"
+                                    alt="nose pin">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Nose Pin</h5>
                                     <div class="middle">
@@ -247,7 +276,8 @@
 
                         <div class="col">
                             <div class="card cate1">
-                                <img src="https://i.ibb.co/HCp2s9F/gold-chain.jpg" class="card-img-top catecom2 image" alt="gold chain">
+                                <img src="https://i.ibb.co/HCp2s9F/gold-chain.jpg" class="card-img-top catecom2 image"
+                                    alt="gold chain">
                                 <div class="card-body com2">
                                     <h5 class="card-title">Gold Chain</h5>
                                     <div class="middle">
@@ -270,17 +300,20 @@
                     <div class="row">
 
                         <div class="col-lg-6 main1">
-                            <img src="https://i.ibb.co/8BTVZSY/female.jpg" data-mdb-img="image/female.jpg" alt="female" class="w-100 shadow-1-strong rounded part1 pari2" />
+                            <img src="https://i.ibb.co/8BTVZSY/female.jpg" data-mdb-img="image/female.jpg" alt="female"
+                                class="w-100 shadow-1-strong rounded part1 pari2" />
                             <figcaption class="women">Women</figcaption>
                         </div>
 
                         <div class="col-lg-6 main2">
                             <div>
-                                <img src="https://i.ibb.co/cJ6WCKG/men.jpg" data-mdb-img="image/men.jpg" alt="men" class="w-100 mb-2 mb-md-4 shadow-1-strong rounded part2 pari2" />
+                                <img src="https://i.ibb.co/cJ6WCKG/men.jpg" data-mdb-img="image/men.jpg" alt="men"
+                                    class="w-100 mb-2 mb-md-4 shadow-1-strong rounded part2 pari2" />
                                 <figcaption class="men">Men</figcaption>
                             </div>
                             <div>
-                                <img src="https://i.ibb.co/Bn8r698/kid.png" data-mdb-img="image/kid.png" alt="kids" class="w-100 shadow-1-strong rounded part3 pari2" />
+                                <img src="https://i.ibb.co/Bn8r698/kid.png" data-mdb-img="image/kid.png" alt="kids"
+                                    class="w-100 shadow-1-strong rounded part3 pari2" />
                                 <figcaption class="kid">Kids</figcaption>
                             </div>
                         </div>
@@ -334,10 +367,10 @@
         <div id="offer">
             <!-- CREATE ID: offervideo-->
             <video width="400" class="vi1" controls autoplay id="offervideo">
-        <source
-          src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/8f2697ef-0a93-4e9c-9ff7-994af63dd5ff/15s+banner+-+1278+%281%29+%281%29.mp4?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-8f2697ef-0a93-4e9c-9ff7-994af63dd5ff-o9nMBcU"
-          type="video/mp4" >
-      </video>
+                <source
+                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/8f2697ef-0a93-4e9c-9ff7-994af63dd5ff/15s+banner+-+1278+%281%29+%281%29.mp4?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-8f2697ef-0a93-4e9c-9ff7-994af63dd5ff-o9nMBcU"
+                    type="video/mp4">
+            </video>
         </div>
 
         <div id="adverties">
@@ -345,10 +378,14 @@
                 <h4>NEW <i>FOR</i> YOU !</h4>
             </div>
             <div class="flower">
-                <img class="img-fluid flower1" src="https://i.ibb.co/4FVbBmQ/news1.jpg" alt="Chania" width="23%" height="300px">
-                <img class="img-fluid flower1" src="https://i.ibb.co/PCgWTwL/news2.jpg" alt="Chania" width="23%" height="300px">
-                <img class="img-fluid flower1" src="https://i.ibb.co/QN8m0MF/news3.jpg" alt="Chania" width="23%" height="300px">
-                <img class="img-fluid flower1" src="https://i.ibb.co/tXYNKWV/news4.jpg" alt="Chania" width="23%" height="300px">
+                <img class="img-fluid flower1" src="https://i.ibb.co/4FVbBmQ/news1.jpg" alt="Chania" width="23%"
+                    height="300px">
+                <img class="img-fluid flower1" src="https://i.ibb.co/PCgWTwL/news2.jpg" alt="Chania" width="23%"
+                    height="300px">
+                <img class="img-fluid flower1" src="https://i.ibb.co/QN8m0MF/news3.jpg" alt="Chania" width="23%"
+                    height="300px">
+                <img class="img-fluid flower1" src="https://i.ibb.co/tXYNKWV/news4.jpg" alt="Chania" width="23%"
+                    height="300px">
             </div>
         </div>
 
@@ -549,22 +586,71 @@
         })
     </script>
 
-
+    <!--coupon-->
     <script>
         window.onload = loadCoupon();
     </script>
 
-<script>
-document.body.style="background-color: var(--bs-dark);transition: 0.5s;"
-const sun = "https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg";
-const moon = "https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg"
+    <!--light-dark-->
+    <script>
+        document.body.style = "background-color: var(--bs-dark);transition: 0.5s;"
+        const sun = "https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg";
+        const moon = "https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg"
 
-var theme = "dark";
-  const root = document.querySelector(":root");
-  const container = document.getElementsByClassName("theme-container")[0];
-  const themeIcon = document.getElementById("theme-icon");
-  container.addEventListener("click", setTheme);
-</script>
+        var theme = "dark";
+        const root = document.querySelector(":root");
+        const container = document.getElementsByClassName("theme-container")[0];
+        const themeIcon = document.getElementById("theme-icon");
+        container.addEventListener("click", setTheme);
+        function setTheme() {
+            switch (theme) {
+                case "dark":
+                    setLight();
+                    theme = "light";
+                    break;
+                case "light":
+                    setDark();
+                    theme = "dark";
+                    break;
+            }
+        }
+        function setLight() {
+            root.style.setProperty(
+                "--bs-dark",
+                "linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%)"
+            );
+            container.classList.remove("shadow-dark");
+            setTimeout(() => {
+                container.classList.add("shadow-light");
+                themeIcon.classList.remove("change");
+            }, 300);
+            themeIcon.classList.add("change");
+            themeIcon.src = sun;
+        }
+        function setDark() {
+            root.style.setProperty("--bs-dark", "#212529");
+            container.classList.remove("shadow-light");
+            setTimeout(() => {
+                container.classList.add("shadow-dark");
+                themeIcon.classList.remove("change");
+            }, 300);
+            themeIcon.classList.add("change");
+            themeIcon.src = moon;
+        }
+    </script>
+
+    <!--geolocation-->
+    <script>
+        let x = document.getElementById('out');
+        let y = document.getElementById('weatherOut');
+        function geolocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition)
+            } else {
+                x.innerText = "Geo Not Supported"
+            }
+        }
+    </script>
 
 </body>
 

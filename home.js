@@ -28,39 +28,33 @@
 //     document.getElementById('footer').style.opacity = '1';
 // }
 
+function geolocation(){
+  if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(showPosition)
+  }else{
+      x.innerText = "Geo Not Supported"
+  }
+}
 
-function setTheme() {
-    switch (theme) {
-      case "dark":
-        setLight();
-        theme = "light";
-        break;
-      case "light":
-        setDark();
-        theme = "dark";
-        break;
-    }
-  }
-  function setLight() {
-    root.style.setProperty(
-      "--bs-dark",
-      "linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%)"
-    );
-    container.classList.remove("shadow-dark");
-    setTimeout(() => {
-      container.classList.add("shadow-light");
-      themeIcon.classList.remove("change");
-    }, 300);
-    themeIcon.classList.add("change");
-    themeIcon.src = sun;
-  }
-  function setDark() {
-    root.style.setProperty("--bs-dark", "#212529");
-    container.classList.remove("shadow-light");
-    setTimeout(() => {
-      container.classList.add("shadow-dark");
-      themeIcon.classList.remove("change");
-    }, 300);
-    themeIcon.classList.add("change");
-    themeIcon.src = moon;
-  }
+function showPosition(data){
+  console.log(data)
+  let lat = data.coords.latitude;
+  let long = data.coords.longitude;
+  //x.innerText = `Latitude is ${lat} and longitude is ${long}`
+  const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+  //api calling
+  fetch(url,{method: 'GET'})
+  // return promise
+  .then((res) => res.json())
+  // resolve promise
+  .then((data) => {
+      console.log(data)
+      let cityName = data.city.name;
+      let temp = data.list[0].temp.day;
+      y.innerText = ` ${cityName} , ${temp}°C`
+  })
+  .catch((err) => {
+      console.log(err)
+  })
+
+}
