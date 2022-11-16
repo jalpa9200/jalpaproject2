@@ -1,0 +1,16 @@
+[
+    {
+        "admin_id":"a01",
+        "admin_name":"jalpa sarvaliya",
+        "admin_login":"ajalpa",
+        "admin_password":"ajs1234",
+        "admin_email":"adminjalpa@gmail.com"
+    },
+    {
+        "admin_id":"a01",
+        "admin_name":"devanshi panchal",
+        "admin_login":"adevanshi",
+        "admin_password":"adp5678",
+        "admin_email":"admindevanshi@gmail.com"
+    }
+]

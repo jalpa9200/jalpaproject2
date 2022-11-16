@@ -1,0 +1,301 @@
+<html>
+
+<head>
+    <title>Diamond Dreams</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="colormejoy.css" rel="stylesheet" type="text/css" />
+    <script src="home.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="main9">
+        <!-- CREATE id: nav-->
+        <header class="header" style="margin-bottom:unset;">
+            <nav class="navbar navbar-light header" id="nav">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://i.ibb.co/M1FvV6S/logo.png" alt="logo" width="120" height="70"
+                            class="d-inline-block align-text-top">
+                    </a>
+                    <div class="align-self-center mx-auto">
+                        <form class="d-flex">
+                            <input class="form-control me-2 pink2" type="search"
+                                placeholder="Search your Jewellery and more..." width="80" aria-label="Search">
+                            <button class="btn try" type="submit">Search</button>
+                        </form>
+                    </div>
+
+                    <div id="social">
+                        <div class="social-links mb-4">
+                            <a href="#" class="wishlist">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                            <a href="#" class="cart">
+                                <i class="bi bi-cart3"></i>
+                            </a>
+                            <a href="#" class="account">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+                        </div>
+                        <!--geolocation-->
+                        <div class="location">
+                            <img onClick="geolocation()" img src='https://i.ibb.co/ngpCfkG/we3.png' />
+                            <p id="out" style="color: #ffffff;"></p>
+                            <p id="weatherOut" style="color: #ffffff;"></p>
+                        </div>
+                    </div>
+
+                    <!--light-dark-->
+                    <!-- <div class="theme-container shadow-light">
+                    <img id="theme-icon"    src="https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg" alt="ERR">
+                  </div> -->
+                </div>
+            </nav>
+        </header>
+
+        <div id="content">
+            <div id="filterDiv">
+                <h1 class="filter-heading">Filter</h1>
+                <!--<p class="location">Select Location</p>
+                <input list="place" name="place" value="place" placeholder="Select Location">
+                <datalist>
+                    <option>Mumbai</option>
+                    <option>Banglore</option>
+                </datalist>-->
+                <div class="Restaurant">
+                    <h4 class="rest-headline">Restaurants</h4>
+                    <label for="cuisine">Utsav</label>
+                    <input type="checkbox" name="Utsav">
+                    <label for="cuisine">The Higher Taste</label>
+                    <input type="checkbox" name="The Higher Taste">
+                    <label for="cuisine">The Bangalore café</label>
+                    <input type="checkbox" name="The Bangalore café">
+                    <label for="cuisine">Sattvam Restaurant</label>
+                    <input type="checkbox" name="Sattvam Restaurant">
+                    <label for="cuisine">Domino's Pizza</label>
+                    <input type="checkbox" name="Domino's Pizza">
+                </div>
+                <div class="cuisine">
+                    <h4 class="cuisine-headline">Cuisine</h4>
+                    <label for="cuisine">Fast Food</label>
+                    <input type="checkbox" name="Fast Food">
+                    <label for="cuisine">North Indian</label>
+                    <input type="checkbox" name="North Indian">
+                    <label for="cuisine">South Indian</label>
+                    <input type="checkbox" name="South Indian">
+                    <label for="cuisine">Streat Food</label>
+                    <input type="checkbox" name="Streat Food">
+                    <label for="cuisine">Chinees</label>
+                    <input type="checkbox" name="Chinees">
+                </div>
+    
+                <div class="cost-for-two">
+                    <h4 class="cost">Cost For Two</h4>
+                    <label for="cuisine">less than ₹ 500</label>
+                    <input type="checkbox" name="Fast Food">
+                    <label for="cuisine">₹ 500 to ₹ 1000</label>
+                    <input type="checkbox" name="North Indian">
+                    <label for="cuisine">₹ 1000 to ₹ 1500</label>
+                    <input type="checkbox" name="South Indian">
+                    <label for="cuisine">₹ 1500 to ₹ 2000</label>
+                    <input type="checkbox" name="Streat Food">
+                    <label for="cuisine">₹ 2000+</label>
+                    <input type="checkbox" name="Chinees">
+                </div>
+    
+                <div class="short">
+                    <h4 class="short-headline">Short</h4>
+                    <label for="cuisine">less than ₹ 500</label>
+                    <input type="checkbox" name="Fast Food">
+                    <label for="cuisine">₹ 500 to ₹ 1000</label>
+                    <input type="checkbox" name="North Indian">
+                </div>
+            </div>
+            <div id="contentDiv">
+                <!--<a href="../details/details.html">Details</a>-->
+                <div class="main1">
+                    <div class="filecontain">
+                        <div class="file1">
+                            <div class="filecomponent1">
+                                <img src="https://i.ibb.co/Z1CW5QB/co1.jpg" alt="co1"  />
+                            </div>
+                            <div class="filecomponent2">
+                                
+                                <!-- <input class="rating" max="5"
+                                    oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)" step="0.5"
+                                    style="--value:4.3" type="range" value="4.3"> -->
+                                <hr />
+                                <h3>Luminous With Laughter</h3>
+                                <h2 class="price">Price: ₹ 344233/-</h2>
+                                <h1 class="offer">Women | Bangle</h1>
+                                <div class="pip5">
+                                    <button><a href="../details/colormejoys/colormejoys1.html">Explore Now</a></button>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="file1">
+                            <div class="filecomponent1">
+                                <img src="https://i.ibb.co/YhC8Sd6/co2.jpg" alt="co2" />
+                            </div>
+                            <div class="filecomponent2">
+                                <hr />
+                                <h3>Dancing Lights</h3>
+                                <h2 class="price">Price: ₹ 337598/-</h2>
+                                <h1 class="offer">Women | Earring</h1>
+                                <div class="pip5">
+                                    <button><a href="../details/colormejoys/colormejoys2.html">Explore Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="file1">
+                            <div class="filecomponent1">
+                                <img src="https://i.ibb.co/XbZ6dt0/sh4.jpg" alt="sh4"  />
+                            </div>
+                            <div class="filecomponent2">
+                                <hr />
+                                <h3>Delightful Feasts</h3>
+                                <h2 class="price">Price: ₹ 169669/-</h2>
+                                <h1 class="offer">Women | Ring</h1>
+                                <div class="pip5">
+                                    <button><a href="../details/colormejoys/colormejoys3.html">Explore Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="file1">
+                            <div class="filecomponent1">
+                                <img src="https://i.ibb.co/DtL37hr/sh6.jpg" alt="sh6"  />
+                            </div>
+                            <div class="filecomponent2">
+                                <hr />
+                                <h3>A Cause For Revelry</h3>
+                                <h2 class="price">Price: ₹ 160448/-</h2>
+                                <h1 class="offer">Women | Pendant</h1>
+                                <div class="pip5">
+                                    <button><a href="../details/colormejoys/colormejoys4.html">Explore Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+
+
+         <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h5>Useful Links</h5>
+                            <ul>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Delivery Information</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">International Shipping</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Payment Options</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Track Your Order</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Return</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Fina a Store</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h5>INFORMATION</h5>
+                            <ul>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Offers & Contest Details</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Help & FAQs</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">About Tanisq</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h5>Contact Us</h5>
+                            <p>1800-266-0123</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-info">
+                            <h3>Download the Tanishq App Now</h3>
+                            <img src="https://i.ibb.co/ZKVcKhj/apple-store.png" class="pari1" />
+                            <img src="https://i.ibb.co/qMmbn75/google-play.png" class="pari1" />
+                            <div class="social-links mt-3">
+                                <h3>Follow Us On</h3>
+                                <a href="#" class="twitter">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#" class="facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="copyright"> &copy; Copyright <strong><span>Jalpa</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits"> Designed by <a href="#">Jalpa</a> </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html> 

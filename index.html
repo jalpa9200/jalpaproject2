@@ -2,11 +2,11 @@
 
 <head>
     <title>Diamond Dreams</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
@@ -18,56 +18,993 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
         integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="home.js"></script>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div id="main9">
         <!-- CREATE id: nav-->
-        <nav class="navbar navbar-light header" id="nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="https://i.ibb.co/M1FvV6S/logo.png" alt="logo" width="120" height="70"
-                        class="d-inline-block align-text-top">
-                </a>
-                <div class="align-self-center mx-auto">
-                    <form class="d-flex">
-                        <input class="form-control me-2 pink2" type="search"
-                            placeholder="Search your Jewellery and more..." width="80" aria-label="Search">
-                        <button class="btn try" type="submit">Search</button>
-                    </form>
-                </div>
-
-                <div id="social">
-                    <div class="social-links mb-4">
-                        <a href="#" class="wishlist">
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        <a href="#" class="cart">
-                            <i class="bi bi-cart3"></i>
-                        </a>
-                        <a href="#" class="account">
-                            <i class="bi bi-person-circle"></i>
-                        </a>
+        <header class="header" style="margin-bottom:unset;">
+            <nav class="navbar navbar-light header" id="nav">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://i.ibb.co/M1FvV6S/logo.png" alt="logo" width="120" height="70"
+                            class="d-inline-block align-text-top">
+                    </a>
+                    <div class="align-self-center mx-auto">
+                        <form class="d-flex">
+                            <input class="form-control me-2 pink2" type="search"
+                                placeholder="Search your Jewellery and more..." width="80" aria-label="Search">
+                            <button class="btn try" type="submit">Search</button>
+                        </form>
                     </div>
-                    <!--geolocation-->
-                    <div class="location">
-                        <img onClick="geolocation()" img src='https://i.ibb.co/ngpCfkG/we3.png' />
-                        <p id="out" style="color: #ffffff;"></p>
-                        <p id="weatherOut" style="color: #ffffff;"></p>
-                    </div>
-                </div>
 
-                <!--light-dark-->
-                <!-- <div class="theme-container shadow-light">
+                    <div id="social">
+                        <div class="social-links mb-4">
+                            <a href="#" class="wishlist">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                            <a href="#" class="cart">
+                                <i class="bi bi-cart3"></i>
+                            </a>
+                            <a href="#" class="account">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+                        </div>
+                        <!--geolocation-->
+                        <div class="location">
+                            <img onClick="geolocation()" img src='https://i.ibb.co/ngpCfkG/we3.png' />
+                            <p id="out" style="color: #ffffff;"></p>
+                            <p id="weatherOut" style="color: #ffffff;"></p>
+                        </div>
+                    </div>
+
+                    <!--light-dark-->
+                    <!-- <div class="theme-container shadow-light">
                     <img id="theme-icon"    src="https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg" alt="ERR">
                   </div> -->
-            </div>
-        </nav>
+                </div>
+            </nav>
 
-        <!-- <div id="coupon">
+
+
+
+            <div class="m-12">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                    <div class="container-fluid">
+
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ALL
+                                        JEWELLERY</a>
+                                    <div class="dropdown-menu">
+                                        <div class="sub-menu">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Category</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">All Jewellery</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Pendents</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Finger Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Mangalsutra</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Chain</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Necklaces</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Nose Pin</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Couple Rings</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle">
+                                                                <span style="padding: 10px;"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Necklace Set</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bangle</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bracelets</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Pendent & Earring Set</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Gold Coins</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Gender</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Men</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Women</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Kids</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Unisex</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Price Band</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">0-5000</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">5k-10k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">10k-20k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">20k-30k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">30k-40k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">40k-50k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item"> >50k</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">GOLD</a>
+                                    <div class="dropdown-menu rose2">
+                                        <div class="sub-menu">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Category</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bangels</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bracelets</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Gold Chains</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Pendants</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Engagement Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Necklaces</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Nose Pins</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Kadas</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Mangalsutras</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle">
+                                                                <span style="padding: 10px;"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Jhumkas</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Hoop Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">stud Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Drop Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Maang Tikka</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Band Ring</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Necklace Set</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Choker Necklaces</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Pendants & Earrings Sets</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Men</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bracelets</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Kadas</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Pendants</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Engagement Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Chains</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bangles</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Kids</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bangles</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Anklets</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bracelet</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Chain</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bangles</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Gold Coin</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">1 Gram</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">2 Gram</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">4 Gram</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">5 Gram</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">8 Gram</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">10 Gram</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">25 Gram</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">30 Gram</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">50 Gram</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">100 Gram</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Metal</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Yellow Gold</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">White Gold</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Rose Gold</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">DIAMOND</a>
+                                    <div class="dropdown-menu">
+                                        <div class="sub-menu">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Category</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bangels</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bracelets</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Diamond Chains</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Necklaces</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Nose Pins</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">kadas</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Choker Necklaces</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Necklaces set</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Mangalsutra</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Men's Jewellery</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Earrings</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Jhumkas</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Hoop Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">stud Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Drop Earrings</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Pendants</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Pendants & Earrings Set</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Casual Wear</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Daily Wear</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Party Wear</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Traditional</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Rings</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Engagement Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Band Ring</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Solitaires</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Rings</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Shape</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Heart</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Round</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Rose Gold</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EARRINGS</a>
+                                    <div class="dropdown-menu">
+                                        <div class="sub-menu">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Popular Earrings</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Jhumkas</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Studs</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Long Drops</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Short Drops</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Chandbali</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Dangle</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">7 Stone</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Bali</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Cluster</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Color Stone</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Navratna Earrings</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle">
+                                                                <span style="padding: 10px;"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Eternity</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Fancy</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Floral</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Gemstone</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Geometric</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Huggies</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Jali</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Leaf</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Motif</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Paisley</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Earrings Set</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Pearl</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle">
+                                                                <span style="padding: 10px;"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Hoop</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Platinum</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Rajkot Bali</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Single Stone</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Stud With Hanging</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Sui Dhaga</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Traditional Stud</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Mia Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">View all Earrings</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Shop By</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">0-10000</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">10k-25k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">25k-50k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">50k-100k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">100k-200k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">200k-500k</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>By Metals & Stones</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Gold Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Diamond Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">White Gold Earrings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Rose Gold Earrings</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">RINGS</a>
+                                    <div class="dropdown-menu">
+                                        <div class="sub-menu">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Popular Rings</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Engagement Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Gold Engagement Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Diamond Engagement Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Platinum Engagement Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Men's Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Casual Rings</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle">
+                                                                <span style="padding: 10px;"></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Gold Band Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Diamond Band Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Platinum Band Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Couple Rings</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>Price Range</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">0<10000< /a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">10k-25k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">25k-50k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">50k-100k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">100k-200k</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">200k-500k</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b>By Metals & Stones</b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Gemstone</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Solitaire</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Rose Gold</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">White Gold</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Silver</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Gold</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Diamond</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">DIGITAL GOLD</a>
+                                </li>     -->
+                                <!-- </ul>
+                            <ul class="nav navbar-nav"> -->
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" style="float:right;"
+                                        data-bs-toggle="dropdown">COLLECTIONS</a>
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                        <div class="sub-menu">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b></b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Aveer</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Joy Of Dressing</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Alekhya</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Chozha</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Rhythms Of Rain</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Romance Of Polki</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Colour Me Joy</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Dor</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Utsaah</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b></b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Little Big Moments</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Engagement Rings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Drop Of Radiance</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Ekatvam</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Aarambh</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Wear Your Prayers</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Virasat</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Ahalya</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Swayahm</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="col">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" class="mainTitle"><b></b></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Preen</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Utsava</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Padmaavat</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Mirayah</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item">Glitterati</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="dropdown-divider"></div>
+                                            <a href="#" class="dropdown-item">Trash</a>
+                                        </div> -->
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">DIGITAL
+                                        GOLD</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">RIVAAH</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">GOLD
+                                        HARVEST</a>
+                                </li>
+
+                                <!-- <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" style="float:right;" data-bs-toggle="dropdown">MORE</a>
+                                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                            <div class="sub-menu">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <a href="#" class="mainTitle"><b></b></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item">Brands</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item">Encircle</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item">Mia</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item">Digital Gold</a>
+                                                            </li>
+                                                            <li>
+                                                                <div class="currencySelector">Currency selector
+                                                                    <label><input type="checkbox"><span></span>
+                                                                        <div class="currency">
+                                                                            <div>₹</div>
+                                                                            <div>$</div>
+                                                                        </div>
+                                                                    </label>
+
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="dropdown-divider"></div>
+                                            <a href="#" class="dropdown-item">Trash</a>
+                                        </div> 
+                                    </li>-->
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- <div id="coupon">
             <button onClick="closeCoupon()" class="btn btn-sm" style="float:right; opacity: 1;">&times;</button>
             <h2 id="couponHeading"><i>Exclusive offer for Diwali !!!</i></h2>
             <div id="offer">
@@ -85,485 +1022,547 @@
             </div>
         </div>  -->
 
-        <div id="roop">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="https://i.ibb.co/GCDVstf/no-1.jpg" class="d-block w-100 pari" alt="img1">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="https://i.ibb.co/6t761SS/no-2.jpg" class="d-block w-100 pari" alt="img2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/TBYGJJS/no-4.jpg" class="d-block w-100 pari" alt="img4">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/hBXcQ7z/no-5.jpg" class="d-block w-100 pari" alt="img5">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/vdMJ75c/no-6.jpg" class="d-block w-100 pari" alt="img6">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/FVxkNd8/no-7.jpg" class="d-block w-100 pari" alt="img7">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/KXxKyMw/no-8.jpg" class="d-block w-100 pari" alt="img8">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
 
 
 
-        <div id="categories">
-            <div class="catego">
-                <h4>Shop By categories</h4>
-            </div>
-            <div class="categomain">
-                <div class="categocomponent1">
-                    <div class="row row-cols-1 row-cols-md-6 g-7">
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/XzhppyK/bangels.png" class="card-img-top catecom2"
-                                    alt="bangles">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Bangels</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
+
+
+
+            <!--slider-->
+            <div id="roop">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="https://i.ibb.co/GCDVstf/no-1.jpg" class="d-block w-100 pari" alt="img1">
                         </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/BNTH5hj/earing.jpg" class="card-img-top catecom2"
-                                    alt="earing">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Earring</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="https://i.ibb.co/6t761SS/no-2.jpg" class="d-block w-100 pari" alt="img2">
                         </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/z4kXRYK/gold-coin.jpg" class="card-img-top catecom2"
-                                    alt="coin">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Gold Coin</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/TBYGJJS/no-4.jpg" class="d-block w-100 pari" alt="img4">
                         </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/FJLMfBQ/necklace.jpg" class="card-img-top catecom2"
-                                    alt="necklace">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Necklace</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/hBXcQ7z/no-5.jpg" class="d-block w-100 pari" alt="img5">
                         </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/LPJyK77/bracelets.jpg" class="card-img-top catecom2"
-                                    alt="bracelets">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Bracelets</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/vdMJ75c/no-6.jpg" class="d-block w-100 pari" alt="img6">
                         </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/TB0MMcs/pendants.jpg" class="card-img-top catecom2"
-                                    alt="pendants">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Pendants</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/FVxkNd8/no-7.jpg" class="d-block w-100 pari" alt="img7">
                         </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/2P278Qb/engagement-ring.jpg" class="card-img-top catecom2"
-                                    alt="engagement-ring">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Engagement-Ring</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/7GqfX5D/mangalsutra.jpg" class="card-img-top catecom2"
-                                    alt="mangalsutra">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Mangalsutra</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/zF9k4W2/ring.jpg" class="card-img-top catecom2" alt="ring">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Ring</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/6H9Zjm6/pendant-errings-set.png"
-                                    class="card-img-top catecom2" alt="pendant errings set">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Pendant Earring Set</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/R9QXX8M/nose-pin.jpg" class="card-img-top catecom2"
-                                    alt="nose pin">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Nose Pin</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card cate1">
-                                <img src="https://i.ibb.co/HCp2s9F/gold-chain.jpg" class="card-img-top catecom2 image"
-                                    alt="gold chain">
-                                <div class="card-body com2">
-                                    <h5 class="card-title">Gold Chain</h5>
-                                    <div class="middle">
-                                        <div class="text">Explore</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/KXxKyMw/no-8.jpg" class="d-block w-100 pari" alt="img8">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </div>
 
-        <div id="veriouscategories">
-            <div class="catego">
-                <h4>Shop By Gender</h4>
-            </div>
-            <div class="varcat1">
-                <div class="lightbox">
-                    <div class="row">
 
-                        <div class="col-lg-6 main1">
-                            <img src="https://i.ibb.co/8BTVZSY/female.jpg" data-mdb-img="image/female.jpg" alt="female"
-                                class="w-100 shadow-1-strong rounded part1 pari2" />
-                            <figcaption class="women">Women</figcaption>
-                        </div>
 
-                        <div class="col-lg-6 main2">
-                            <div>
-                                <img src="https://i.ibb.co/cJ6WCKG/men.jpg" data-mdb-img="image/men.jpg" alt="men"
-                                    class="w-100 mb-2 mb-md-4 shadow-1-strong rounded part2 pari2" />
-                                <figcaption class="men">Men</figcaption>
+            <div id="categories">
+                <div class="catego">
+                    <h4>Shop By categories</h4>
+                </div>
+                <div class="categomain">
+                    <div class="categocomponent1">
+                        <div class="row row-cols-1 row-cols-md-6 g-7">
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/XzhppyK/bangels.png" class="card-img-top catecom2"
+                                        alt="bangles">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Bangels</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/bangles.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <img src="https://i.ibb.co/Bn8r698/kid.png" data-mdb-img="image/kid.png" alt="kids"
-                                    class="w-100 shadow-1-strong rounded part3 pari2" />
-                                <figcaption class="kid">Kids</figcaption>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/BNTH5hj/earing.jpg" class="card-img-top catecom2"
+                                        alt="earing">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Earring</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/earring.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/z4kXRYK/gold-coin.jpg" class="card-img-top catecom2"
+                                        alt="coin">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Gold Coin</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/coin.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/FJLMfBQ/necklace.jpg" class="card-img-top catecom2"
+                                        alt="necklace">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Necklace</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/necklace.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/LPJyK77/bracelets.jpg" class="card-img-top catecom2"
+                                        alt="bracelets">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Bracelets</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/bracelet.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/TB0MMcs/pendants.jpg" class="card-img-top catecom2"
+                                        alt="pendants">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Pendants</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/pendant.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/2P278Qb/engagement-ring.jpg"
+                                        class="card-img-top catecom2" alt="engagement-ring">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Engagement-Ring</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/engmentring.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/7GqfX5D/mangalsutra.jpg" class="card-img-top catecom2"
+                                        alt="mangalsutra">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Mangalsutra</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/mangalsutra.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/zF9k4W2/ring.jpg" class="card-img-top catecom2"
+                                        alt="ring">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Ring</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/ring.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/6H9Zjm6/pendant-errings-set.png"
+                                        class="card-img-top catecom2" alt="pendant errings set">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Pendant Earring Set</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/pendantearset.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/R9QXX8M/nose-pin.jpg" class="card-img-top catecom2"
+                                        alt="nose pin">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Nose Pin</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/nosepin.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card cate1">
+                                    <img src="https://i.ibb.co/HCp2s9F/gold-chain.jpg"
+                                        class="card-img-top catecom2 image" alt="gold chain">
+                                    <div class="card-body com2">
+                                        <h5 class="card-title">Gold Chain</h5>
+                                        <div class="middle">
+                                            <div class="text"><a href="listing/goldchain.html">Explore</a></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div id="veriouscategories">
+                <div class="catego">
+                    <h4>Shop By Gender</h4>
+                </div>
+                <div class="varcat1">
+                    <div class="lightbox">
+                        <div class="row">
 
-        <div id="collection">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="catego">
-                            <h4>Shop By collection</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <!-- Bootstrap 5 card box -->
-                        <div class="card-box">
-                            <div class="card">
-                                <img src="https://i.ibb.co/WzT23TL/coll1.jpg" class="img-fluid" alt="collection1">
+                            <div class="col-lg-6 main1">
+                                <img src="https://i.ibb.co/8BTVZSY/female.jpg" data-mdb-img="image/female.jpg"
+                                    alt="female" class="w-100 shadow-1-strong rounded part1 pari2" />
+                                <figcaption class="women">Women</figcaption>
                             </div>
-                            <h5 class="rain">The enjoy of Dressing</h5>
-                        </div>
-                    </div>
 
-                    <div class="col-md-6 col-lg-4">
-                        <!-- Bootstrap 5 card box -->
-                        <div class="card-box">
-                            <div class="card">
-                                <img src="https://i.ibb.co/RCVZZM9/coll2.jpg" class="img-fluid" alt="collection2">
+                            <div class="col-lg-6 main2">
+                                <div>
+                                    <img src="https://i.ibb.co/cJ6WCKG/men.jpg" data-mdb-img="image/men.jpg" alt="men"
+                                        class="w-100 mb-2 mb-md-4 shadow-1-strong rounded part2 pari2" />
+                                    <figcaption class="men">Men</figcaption>
+                                </div>
+                                <div>
+                                    <img src="https://i.ibb.co/Bn8r698/kid.png" data-mdb-img="image/kid.png" alt="kids"
+                                        class="w-100 shadow-1-strong rounded part3 pari2" />
+                                    <figcaption class="kid">Kids</figcaption>
+                                </div>
                             </div>
-                            <h5 class="rain">Drop-of-radiance</h5>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <!-- Bootstrap 5 card box -->
-                        <div class="card-box">
-                            <div class="card">
-                                <img src="https://i.ibb.co/j4P5zyk/coll3.jpg" class="img-fluid" alt="collection3">
-                            </div>
-                            <h5 class="rain">Stunning every Ear</h5>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="offer">
-            <!-- CREATE ID: offervideo-->
-            <video width="400" class="vi1" controls autoplay id="offervideo">
-                <source
-                    src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/8f2697ef-0a93-4e9c-9ff7-994af63dd5ff/15s+banner+-+1278+%281%29+%281%29.mp4?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-8f2697ef-0a93-4e9c-9ff7-994af63dd5ff-o9nMBcU"
-                    type="video/mp4">
-            </video>
-        </div>
 
-        <div id="adverties">
-            <div class="catego">
-                <h4>NEW <i>FOR</i> YOU !</h4>
-            </div>
-            <div class="flower">
-                <img class="img-fluid flower1" src="https://i.ibb.co/4FVbBmQ/news1.jpg" alt="Chania" width="23%"
-                    height="300px">
-                <img class="img-fluid flower1" src="https://i.ibb.co/PCgWTwL/news2.jpg" alt="Chania" width="23%"
-                    height="300px">
-                <img class="img-fluid flower1" src="https://i.ibb.co/QN8m0MF/news3.jpg" alt="Chania" width="23%"
-                    height="300px">
-                <img class="img-fluid flower1" src="https://i.ibb.co/tXYNKWV/news4.jpg" alt="Chania" width="23%"
-                    height="300px">
-            </div>
-        </div>
-
-        <div id="trends">
-            <div class="catego">
-                <h4>Trending Products</h4>
-            </div>
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="https://i.ibb.co/YdzddBq/roll1.jpg" alt="roll1" />
-                    <div class="pip">
-                        <h5>Floral Bead Gold Mesh Bangle</h5>
-                    </div>
-                    <div class="pip1">
-                        <h6>₹ 55012</h6>
-                        <button>Explore Now</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://i.ibb.co/sqYZmHh/roll2.jpg" alt="roll2" />
-                    <div class="pip">
-                        <h5>Slender Gold Bracelet</h5>
-                    </div>
-                    <div class="pip1">
-                        <h6>₹ 50135</h6>
-                        <button>Explore Now</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://i.ibb.co/h9KLr4H/roll3.jpg" alt="roll3" />
-                    <div class="pip">
-                        <h5>Differentiated Short Drop Earrings</h5>
-                    </div>
-                    <div class="pip1">
-                        <h6>₹ 68991</h6>
-                        <button>Explore Now</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://i.ibb.co/f8byRPg/roll4.jpg" alt="roll4" />
-                    <div class="pip">
-                        <h5>Enchanting Leaflike Gold Necklace</h5>
-                    </div>
-                    <div class="pip1">
-                        <h6>₹ 140500</h6>
-                        <button>Explore Now</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://i.ibb.co/KVZssLk/roll5.jpg" alt="roll5" />
-                    <div class="pip">
-                        <h5>Enchanting Traditional Gold Mesh Ring</h5>
-                    </div>
-                    <div class="pip1">
-                        <h6>₹ 20856</h6>
-                        <button>Explore Now</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://i.ibb.co/3T4CGDR/roll6.jpg" alt="roll6" />
-                    <div class="pip">
-                        <h5>Alluring Foxtail Gold Chain</h5>
-                    </div>
-                    <div class="pip1">
-                        <h6>₹ 38766</h6>
-                        <button>Explore Now</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://i.ibb.co/CtF6hSH/roll7.jpg" alt="roll7" />
-                    <div class="pip">
-                        <h5>Contemporary Stylish Diamond Stud Earrings</h5>
-                    </div>
-                    <div class="pip1">
-                        <h6>₹ 15116</h6>
-                        <button>Explore Now</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://i.ibb.co/GQ8DKmX/roll8.jpg" alt="roll8" />
-                    <div class="pip">
-                        <h5>Intricate Floral Pendent and Earrings Set</h5>
-                    </div>
-                    <div class="pip1">
-                        <h6>₹ 194887</h6>
-                        <button>Explore Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer id="footer">
-            <div class="footer-top">
+            <div id="collection">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h5>Useful Links</h5>
-                            <ul>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">Delivery Information</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">International Shipping</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">Payment Options</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">Track Your Order</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">Return</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">Fina a Store</a>
-                                </li>
-                            </ul>
+                        <div class="col-12">
+                            <div class="catego">
+                                <h4>Shop By collection</h4>
+                            </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 footer-links">
-                            <h5>INFORMATION</h5>
-                            <ul>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">Careers</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">Blog</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">Offers & Contest Details</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">Help & FAQs</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-chevron-right"></i>
-                                    <a href="#">About Tanisq</a>
-                                </li>
-                            </ul>
+                        <div class="col-md-6 col-lg-4">
+                            <!-- Bootstrap 5 card box -->
+                            <div class="card-box">
+                                <div class="card">
+                                    <img src="https://i.ibb.co/WzT23TL/coll1.jpg" class="img-fluid" alt="collection1">
+
+
+
+                                </div>
+                                <h5 class="rain">The enjoy of Dressing<button style="border: none; float:right;">
+                                        <div class="text"><a href="listing/joy.html">Explore</a></div>
+                                    </button></h5>
+                            </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 footer-contact">
-                            <h5>Contact Us</h5>
-                            <p>1800-266-0123</p>
+
+                        <div class="col-md-6 col-lg-4">
+                            <!-- Bootstrap 5 card box -->
+                            <div class="card-box">
+                                <div class="card">
+                                    <img src="https://i.ibb.co/RCVZZM9/coll2.jpg" class="img-fluid" alt="collection2">
+                                </div>
+                                <h5 class="rain">Drop-of-radiance<button style="border: none; float:right;">
+                                        <div class="text"><a href="listing/dropofradiance.html">Explore</a></div>
+                                    </button></h5>
+                            </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 footer-info">
-                            <h3>Download the Tanishq App Now</h3>
-                            <img src="https://i.ibb.co/ZKVcKhj/apple-store.png" class="pari1" />
-                            <img src="https://i.ibb.co/qMmbn75/google-play.png" class="pari1" />
-                            <div class="social-links mt-3">
-                                <h3>Follow Us On</h3>
-                                <a href="#" class="twitter">
-                                    <i class="bi bi-twitter"></i>
-                                </a>
-                                <a href="#" class="facebook">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="#" class="instagram">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
+
+                        <div class="col-md-6 col-lg-4">
+                            <!-- Bootstrap 5 card box -->
+                            <div class="card-box">
+                                <div class="card">
+                                    <img src="https://i.ibb.co/j4P5zyk/coll3.jpg" class="img-fluid" alt="collection3">
+                                </div>
+                                <h5 class="rain">Stunning every Ear<button style="border: none; float:right;">
+                                        <div class="text"><a href="listing/stunning.html">Explore</a></div>
+                                    </button></h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="cont">
-                <div class="copyright"> &copy; Copyright <strong><span>Jalpa</span></strong>. All Rights Reserved </div>
-                <div class="credits"> Designed by <a href="#">Jalpa</a> </div>
+
+            <div id="offer">
+                <!-- CREATE ID: offervideo-->
+                <video width="400" class="vi1" controls autoplay id="offervideo">
+                    <source
+                        src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/8f2697ef-0a93-4e9c-9ff7-994af63dd5ff/15s+banner+-+1278+%281%29+%281%29.mp4?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-8f2697ef-0a93-4e9c-9ff7-994af63dd5ff-o9nMBcU"
+                        type="video/mp4">
+                </video>
             </div>
-        </footer>
+
+            <div id="adverties">
+                <div class="catego">
+                    <h4>NEW <i>FOR</i> YOU !</h4>
+                </div>
+                <div class="flower">
+                    <div class="cards">
+                        <div class="elms-animation">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                            <span class="four"></span>
+                        </div>
+                        <img class="img-fluid flower1" src="https://i.ibb.co/4FVbBmQ/news1.jpg" alt="Chania" width="15%"
+                            height="300px">
+                        <div class="content">
+                            <button class="new"><a href="listing/rain.html">View</a></button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="elms-animation">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                            <span class="four"></span>
+                        </div>
+                        <img class="img-fluid flower1" src="https://i.ibb.co/PCgWTwL/news2.jpg" alt="Chania" width="15%"
+                            height="300px">
+                        <div class="content">
+                            <button class="new"><a href="listing/liveadream.html">View</a></button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="elms-animation">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                            <span class="four"></span>
+                        </div>
+                        <img class="img-fluid flower1" src="https://i.ibb.co/QN8m0MF/news3.jpg" alt="Chania" width="15%"
+                            height="300px">
+                        <div class="content">
+                            <button class="new"><a href="listing/colormejoy.html">View</a></button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="elms-animation">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                            <span class="four"></span>
+                        </div>
+                        <img class="img-fluid flower1" src="https://i.ibb.co/tXYNKWV/news4.jpg" alt="Chania" width="15%"
+                            height="300px">
+                        <div class="content">
+                            <button class="new"><a href="listing/wave.html">View</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="trends">
+                <div class="catego">
+                    <h4>Trending Products</h4>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="https://i.ibb.co/YdzddBq/roll1.jpg" alt="roll1" />
+                        <div class="pip">
+                            <h5>Floral Bead Gold Mesh Bangle</h5>
+                        </div>
+                        <div class="pip1">
+                            <h6>₹ 55012</h6>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.ibb.co/sqYZmHh/roll2.jpg" alt="roll2" />
+                        <div class="pip">
+                            <h5>Slender Gold Bracelet</h5>
+                        </div>
+                        <div class="pip1">
+                            <h6>₹ 50135</h6>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.ibb.co/h9KLr4H/roll3.jpg" alt="roll3" />
+                        <div class="pip">
+                            <h5>Differentiated Short Drop Earrings</h5>
+                        </div>
+                        <div class="pip1">
+                            <h6>₹ 68991</h6>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.ibb.co/f8byRPg/roll4.jpg" alt="roll4" />
+                        <div class="pip">
+                            <h5>Enchanting Leaflike Gold Necklace</h5>
+                        </div>
+                        <div class="pip1">
+                            <h6>₹ 140500</h6>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.ibb.co/KVZssLk/roll5.jpg" alt="roll5" />
+                        <div class="pip">
+                            <h5>Enchanting Traditional Gold Mesh Ring</h5>
+                        </div>
+                        <div class="pip1">
+                            <h6>₹ 20856</h6>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.ibb.co/3T4CGDR/roll6.jpg" alt="roll6" />
+                        <div class="pip">
+                            <h5>Alluring Foxtail Gold Chain</h5>
+                        </div>
+                        <div class="pip1">
+                            <h6>₹ 38766</h6>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.ibb.co/CtF6hSH/roll7.jpg" alt="roll7" />
+                        <div class="pip">
+                            <h5>Contemporary Stylish Diamond Stud Earrings</h5>
+                        </div>
+                        <div class="pip1">
+                            <h6>₹ 15116</h6>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.ibb.co/GQ8DKmX/roll8.jpg" alt="roll8" />
+                        <div class="pip">
+                            <h5>Intricate Floral Pendent and Earrings Set</h5>
+                        </div>
+                        <div class="pip1">
+                            <h6>₹ 194887</h6>
+                            <button>Explore Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h5>Useful Links</h5>
+                                <ul>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Delivery Information</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">International Shipping</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Payment Options</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Track Your Order</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Return</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Fina a Store</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h5>INFORMATION</h5>
+                                <ul>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Careers</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Offers & Contest Details</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">Help & FAQs</a>
+                                    </li>
+                                    <li>
+                                        <i class="bx bx-chevron-right"></i>
+                                        <a href="#">About Tanisq</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6 footer-contact">
+                                <h5>Contact Us</h5>
+                                <p>1800-266-0123</p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 footer-info">
+                                <h3>Download the Tanishq App Now</h3>
+                                <img src="https://i.ibb.co/ZKVcKhj/apple-store.png" class="pari1" />
+                                <img src="https://i.ibb.co/qMmbn75/google-play.png" class="pari1" />
+                                <div class="social-links mt-3">
+                                    <h3>Follow Us On</h3>
+                                    <a href="#" class="twitter">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                    <a href="#" class="facebook">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="#" class="instagram">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="copyright"> &copy; Copyright <strong><span>Jalpa</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits"> Designed by <a href="#">Jalpa</a> </div>
+                </div>
+            </footer>
     </div>
 
 

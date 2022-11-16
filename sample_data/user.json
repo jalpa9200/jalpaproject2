@@ -1,0 +1,62 @@
+[
+    {
+        "user_id" : 1,
+        "login" : "Jalpa98",
+        "password" : "@Jalpa1234",
+        "user_name" : "Jalpa Patel",
+        "email" : "jalpa@gmail.com",
+        "phone_no" : 9974512896,
+        "aadress" : "Siri",
+        "postcode" : 305624,
+        "city" : "Delhi",
+        "country" : "India"
+    },
+    {
+        "user_id" : 2,
+        "login" : "Samrudhdhi07",
+        "password" : "@Samrudhdhi5678",
+        "user_name" : "Samrudhdhi Sarvaliya",
+        "email" : "samru@gmail.com",
+        "phone_no" : 9911586290,
+        "aadress" : "Agra",
+        "postcode" : 223007,
+        "city" : "Uttar Pradesh",
+        "country" : "India"
+    },
+    {
+        "user_id" : 3,
+        "login" : "Archi45",
+        "password" : "@Archi9012",
+        "user_name" : "Archi Bagadiya",
+        "email" : "archi45@gmail.com",
+        "phone_no" : 9876543215,
+        "aadress" : "Ahemdabad",
+        "postcode" : 320008,
+        "city" : "Gujrat",
+        "country" : "India"
+    },
+    {
+        "user_id" : 4,
+        "login" : "Chintav47",
+        "password" : "@Chintav3456",
+        "user_name" : "Chintav Viramgami",
+        "email" : "VChintav@gmail.com",
+        "phone_no" : 9876886425,
+        "aadress" : "Gandhi Nagar",
+        "postcode" : 382002,
+        "city" : "Gujrat",
+        "country" : "India"
+    },
+    {
+        "user_id" : 5,
+        "login" : "Adhya57",
+        "password" : "@Adhya7890",
+        "user_name" : "Adhya Kapoor ",
+        "email" : "kadhya@gmail.com",
+        "phone_no" : 9950971056,
+        "aadress" : "Jaipur",
+        "postcode" : 302001,
+        "city" : "Rajasthan",
+        "country" : "India"
+    }
+]

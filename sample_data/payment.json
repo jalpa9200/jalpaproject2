@@ -1,0 +1,52 @@
+[
+    {
+        "payment_id":"p01",
+        "payment_date":"15/10/2022",
+        "payment_mode":"paytm",
+        "payment_status":"completed",
+        "order_id":"o4",
+        "product_id":"coin",
+        "bill_amt":"Rs.1799/-",
+        "user_id" : 1
+    },
+    {
+        "payment_id":"p02",
+        "payment_date":"1/10/2022",
+        "payment_mode":"paytm",
+        "payment_status":"cancelled",
+        "order_id":"o2",
+        "product_id":"bangle",
+        "bill_amt":"Rs. 38803/-",
+        "user_id" : 4
+    },
+    {
+        "payment_id":"p03",
+        "payment_date":"2/11/2022",
+        "payment_mode":"cash on delivery",
+        "payment_status":"pending",
+        "order_id":"o3",
+        "product_id":"ring",
+        "product_price":"Rs. 61170/-",
+        "user_id" : 5
+    },
+    {
+        "payment_id":"p04",
+        "payment_date":"19/10/2022",
+        "payment_mode":"paytm",
+        "payment_status":"completed",
+        "order_id":"o5",
+        "product_id":"gold chain",
+        "product_price":"Rs. 75180/-",
+        "user_id" : 3
+    },
+    {
+        "payment_id":"p05",
+        "payment_date":"21/10/2022",
+        "payment_mode":"paytm",
+        "payment_status":"completed",
+        "order_id":"o1",
+        "product_id":"earring",
+        "product_price":"Rs. 428424/-",
+        "user_id" : 2
+    }
+]
