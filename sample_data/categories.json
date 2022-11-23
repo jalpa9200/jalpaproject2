@@ -1,0 +1,88 @@
+db.category.insert(
+[
+    {
+        "_id":1,
+        "category_id":1,
+        "product_id":1,
+        "product_category":"Bangle",
+        "product_type": "Women"
+    },
+    {
+        "_id":2,
+        "category_id":2,
+        "product_id":2,
+        "product_category":"Earring",
+        "product_type": "Women"
+    },
+    {
+        "_id":3,
+        "category_id":3,
+        "product_id":3,
+        "product_category":"Gold Coin",
+        "product_type": "Unisex"
+    },
+    {
+        "_id":4,
+        "category_id":4,
+        "product_id":4,
+        "product_category":"Necklace",
+        "product_type": "Women"
+    },
+    {
+        "_id":5,
+        "category_id":5,
+        "product_id":5,
+        "product_category":"Bracelet",
+        "product_type": "Women or Men"
+    },
+    {
+        "_id":6,
+        "category_id":6,
+        "product_id":6,
+        "product_category":"Pendant",
+        "product_type": "Women or Kids"
+    },
+    { 
+        "_id":7,
+        "category_id":7,
+        "product_id":7,
+        "product_category":"Finger Ring",
+        "product_type": "Women or Men "
+    },
+    {
+        "_id":8,
+        "category_id":8,
+        "product_id":8,
+        "product_category":"Mangalsutra",
+        "product_type": "Women"
+    },
+    {  
+        "_id":9,
+        "category_id":9,
+        "product_id":9,
+        "product_category":"Ring",
+        "product_type": "Women or Men" 
+    },
+    {
+        "_id":10,
+        "category_id":10,
+        "product_id":10,
+        "product_category":"Pendant and Earring Set",
+        "product_type": "Women"
+    },
+    {
+        "_id":11,
+        "category_id":11,
+        "product_id":11,
+        "product_category":"Nose Pin",
+        "product_type": "Women"
+    },
+    {
+        "_id":12,
+        "category_id":12,
+        "product_id":12,
+        "product_category":"Chain",
+        "product_type": "Women , Men ,Unisex or Kids" 
+    }    
+]
+)
