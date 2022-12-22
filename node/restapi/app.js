@@ -5,7 +5,7 @@ dotenv.config()
 let port = process.env.PORT || 2500;
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
-let mongoUrl = process.env.MongoURL;
+let mongoUrl = process.env.LiveMongo;
 let cors = require('cors')
 let bodyParser = require('body-parser')
 let db;
@@ -29,7 +29,7 @@ app.get('/category',(req,res) => {
 })
 
 //list of jewellery with respect to Categories
-app.get('/products',(req,res) =>{
+app.get('/product',(req,res) =>{
     let productId = Number(req.query.productId)
     let query = {}
     if(productId){
@@ -44,7 +44,7 @@ app.get('/products',(req,res) =>{
 })
 
 
-app.get('/products',(req,res)=>{
+app.get('/product',(req,res)=>{
     let productId = Number(req.query.productId);
     let categoryId = Number(req.query.categoryId)
     let query = {}
@@ -113,7 +113,7 @@ app.get("/filter/:productId", (req, res) => {
     if(req.query.sort){
         sort={cost:req.query.sort}
     }
-    
+
     if (categoryId && lcost && hcost) {
       query = {
         product_id: productId,
@@ -228,7 +228,7 @@ app.delete('/deleteOrder/:id',(req,res) => {
 //connection with db
 MongoClient.connect(mongoUrl,(err,client) => {
     if(err) console.log('Error while Connecting');
-    db = client.db('jalpaproject2');
+    db = client.db('jalpaproj');
     app.listen(port,() =>{
         console.log(`Server is running on port ${port}`)
     }

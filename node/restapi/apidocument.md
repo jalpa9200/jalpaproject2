@@ -4,10 +4,10 @@
 * http://localhost:9800/category
 
 > list of jewellery
-* http://localhost:9800/products
+* http://localhost:9800/product
 
 > list of jewellery with respect to Categories
-* http://localhost:9800/products?productId=12
+* http://localhost:9800/product?productId=12
 
 
 //Page2
