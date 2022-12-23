@@ -27,7 +27,7 @@ a {
 
 .social-links {
     font-size: 24px;
-    margin: 5px 0px;
+    margin: 5px 58px;
 }
 
 .social-links .wishlist {
@@ -61,9 +61,9 @@ p#weatherOut {
 p#out {
     margin-top: -6%;
 }
-.social-links {
+.footer-info .social-links {
     font-size: 24px;
-    margin: 5px 58px;
+    margin: 5px 0px;
 }
 
 #contentDiv {

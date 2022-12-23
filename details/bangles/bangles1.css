@@ -27,7 +27,7 @@ a {
 
 .social-links {
     font-size: 24px;
-    margin: 5px 0px;
+    margin: 5px 58px;
 }
 
 .social-links .wishlist {
@@ -61,16 +61,16 @@ p#weatherOut {
 p#out {
     margin-top: -6%;
 }
-.social-links {
+.footer-info .social-links {
     font-size: 24px;
-    margin: 5px 58px;
+    margin: 5px 0px;
 }
 
 
 .hero{
     width: 100%;
 }
-.row{
+.row1{
     width: 90%;
     height: 100vh;
     margin: auto;
@@ -303,4 +303,18 @@ button .fa{
     text-align: center;
     font-size: 13px;
     color: #fff;
+}
+
+.cont {
+    background-color: #830047;
+}
+
+.credits a {
+    color: #f1db5e;
+}
+
+.pari1 {
+    height: auto;
+    width: auto;
+    cursor: pointer;
 }
