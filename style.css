@@ -166,6 +166,11 @@ h5.card-title {
 .varcat1 {
     margin: 20px 20px;
 }
+@media screen and (min-device-width: 320px) and (max-device-width: 420px)  {
+    .varcat1 {
+        margin: 0px 0px !important;
+    }
+  }
 
 .main1 {
     width: 60%;
