@@ -318,3 +318,50 @@ button .fa{
     width: auto;
     cursor: pointer;
 }
+@media screen and (min-device-width: 320px) and (max-device-width: 480px)  {
+.content {
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 6%;
+}
+.content h2{
+    font-size: 23px;
+}
+.row1 {
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+.preview img {
+    height: 75% !important;
+    margin-top: 12%;
+}
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px)  {
+    .content {
+        width: 90%;
+    margin-left: 5%;
+    margin-bottom: 6%;
+    margin-top: 0%;
+
+    }
+    .content h2{
+        font-size: 17px;
+    margin-bottom: 0px;
+    }
+    .row1 {
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: inline-flex
+    }
+    .preview img {
+        height: 55% !important;
+        margin-top: 10%;
+    }
+    .price{
+        font-size: 19px;
+    }
+    }

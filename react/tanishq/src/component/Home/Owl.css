@@ -1,0 +1,37 @@
+#trends {
+    height: auto;
+    /**border: 2px solid hotpink;**/
+}
+
+.item {
+    height: 410px;
+    width: 288px;
+    border: 1px solid lightgray;
+    margin-top: 2%;
+}
+
+.pip {
+    margin-top: 2%;
+    height: 13%;
+    padding: 2px 8px;
+}
+
+.pip1 h6 {
+    margin-top: 1%;
+    color: chocolate;
+    margin-left: 3%;
+}
+
+.pip1 button {
+    float: right;
+    margin-right: 2%;
+    font-size: 19px;
+    font-family: Georgia;
+    margin-top: -12px;
+    border-color: azure;
+}
+
+.pip1 button:hover {
+    background-color: #830047;
+    color: #f1db5e;
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "product_id":1,
+        "product_category":"Bangle",
+        "product_image":"https://i.ibb.co/XzhppyK/bangels.png"
+    },    
+    {
+        "product_id":2,
+        "product_category":"Earring",
+        "product_image":"https://i.ibb.co/BNTH5hj/earing.jpg"
+    },    
+    {
+        "product_id":3,
+        "product_category":"Gold Coin",
+        "product_image":"https://i.ibb.co/z4kXRYK/gold-coin.jpg"
+    },    
+    {
+        "product_id":4,
+        "product_category":"Necklace",
+        "product_image":"https://i.ibb.co/FJLMfBQ/necklace.jpg"
+    },    
+    {
+        "product_id":5,
+        "product_category":"Bracelet",
+        "product_image":"https://i.ibb.co/LPJyK77/bracelets.jpg"
+    },    
+    {
+        "product_id":6,
+        "product_category":"Pendant",
+        "product_image":"https://i.ibb.co/TB0MMcs/pendants.jpg"
+    },    
+    {
+        "product_id":7,
+        "product_category":"Finger Ring",
+        "product_image":"https://i.ibb.co/2P278Qb/engagement-ring.jpg"
+    },    
+    {
+        "product_id":8,
+        "product_category":"Mangalsutra",
+        "product_image":"https://i.ibb.co/7GqfX5D/mangalsutra.jpg"
+    },    
+    {
+        "product_id":9,
+        "product_category":"Ring",
+        "product_image":"https://i.ibb.co/zF9k4W2/ring.jpg"
+    },    
+    {
+        "product_id":10,
+        "product_category":"Pendant and Earring Set",
+        "product_image":"https://i.ibb.co/6H9Zjm6/pendant-errings-set.png"
+    },    
+    {
+        "product_id":11,
+        "product_category":"Nose Pin",
+        "product_image":"https://i.ibb.co/R9QXX8M/nose-pin.jpg"
+    },    
+    {
+        "product_id":12,
+        "product_category":"Chain",
+        "product_image":"https://i.ibb.co/HCp2s9F/gold-chain.jpg"
+    }
+]

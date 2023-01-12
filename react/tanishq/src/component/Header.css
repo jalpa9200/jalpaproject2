@@ -1,0 +1,207 @@
+body{
+    margin:auto
+}
+a{
+    text-decoration: none;
+}
+/*Header Css*/
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #830047;
+}
+.pink2 {
+    width: 400px;
+}
+
+.try {
+    border-color: #f1db5e !important;
+    color: #ebda7b !important;
+}
+
+.try:hover {
+    background-color: rgb(83, 8, 48);
+}
+.location img {
+    margin-top: -17%;
+    width: 40px;
+    float: right;
+    cursor: pointer;
+    margin-right: 10%;
+}
+
+p#weatherOut {
+    float: right;
+    margin-right: 0%;
+    margin-top: -2%;
+}
+
+p#out {
+    margin-top: -6%;
+}
+.social-links {
+    font-size: 24px;
+    margin: 5px 58px;
+}
+.theme-container {
+    /* width: 70px; */
+    /* height: 70px; */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.theme-container:hover {
+    opacity: 0.8;
+}
+
+.shadow-dark {
+    background: linear-gradient(145deg, #23282c, #1e2125);
+    box-shadow: 17px 17px 23px #1a1d20,
+        -17px -17px 23px #282d32, inset 5px 5px 4px #1e2226,
+        inset -5px -5px 4px #24282c;
+}
+
+.shadow-light {
+    box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
+        inset 7px 7px 3px rgba(209, 217, 230, 0.35),
+        inset -11px -11px 3px rgba(255, 255, 255, 0.3)
+}
+
+@keyframes change {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.change {
+    animation-name: change;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+#coupon {
+    background: linear-gradient(180deg, #f8d8d9, #f2a7a7);
+    z-index: 100;
+    visibility: hidden;
+    height: 550px;
+    width: 60%;
+    margin-left: 20%;
+    position: fixed;
+    border-radius: 10px;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 3px;
+    height: 8%;
+    width: 5%;
+    color: black;
+}
+
+.btn-group-sm>.btn,
+.btn-sm:hover {
+    background-color: #e71010;
+    color: white;
+}
+
+#couponHeading {
+    text-align: center;
+    /*color: #daa82b;*/
+    color: #e7982ade;
+    font-size: 35px;
+    margin-top: 1%;
+    font-family: Georgia;
+}
+
+#offer {
+    height: 400px;
+    width: 90%;
+    margin-left: 6%;
+    /*border:1px solid orange;*/
+}
+
+
+.last {
+    background-color: #830047;
+}
+
+#main9 {
+    height: 100%;
+}
+
+#offerimage {
+    width: 50%;
+    height: 350px;
+    float: left;
+    margin-top: 5%;
+}
+
+#offerDetail {
+    width: 55%;
+    height: 350px;
+    margin-left: 48%;
+    padding-left: 5%;
+}
+
+#offerDetail h3 {
+    float: right;
+    line-height: 1.5;
+    font-size: 32px;
+    margin-top: 12%;
+    font-family: geogia;
+    color: #830047;
+}
+
+#imagestyle {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+#offerDetail p {
+    color: #616A6B;
+    margin-top: -3%;
+}
+
+#offerDetail h5 {
+    color: #1E8449;
+    margin-bottom: 6%;
+}
+
+#offerDetail h4 {
+    color: #C0392B;
+    font-family: Georgia;
+}
+
+#offerDetail h4::after {
+    content: none;
+}
+
+#brand{
+    float:left;
+    margin-left: 2%;
+    margin-top: 0%;
+    font-size: 30px;
+    margin-right: 2%;
+}
+#social{
+    float:right;
+    margin-right: 4%;
+}
+.socialLogo{
+    height:50px
+}

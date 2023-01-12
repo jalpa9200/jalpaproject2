@@ -180,7 +180,6 @@ db.product.insert(
         "product_price": 232966,
         "product_detail":"18k gold purity and 39.820gram gross weight"
     },
-    // earrings
     {
         "_id":16,
         "product_id":2,
@@ -361,7 +360,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/GpNMp5b/er15.jpg",
         "product_detail":"22k gold purity and 8.694gram gross weight"
     },
-    // gold coin
     {
         "_id":31,
         "category_id":3,
@@ -470,7 +468,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/wNMsChb/coin9.jpg",
         "product_detail":"22k gold purity and 8gram gross weight"
     },
-    // necklace
     {
         "_id":40,
         "category_id":4,
@@ -579,7 +576,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/56xXDL3/nc9.jpg",
         "product_detail":"22k gold purity and 9.148gram gross weight"
     },
-    // bracelet
     {
         "_id":49,
         "category_id":5,
@@ -712,7 +708,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/XxLyQmC/br11.jpg",
         "product_detail":"95k gold purity and 32.322gram gross weight"
     },
-    // pendant
     {   "_id":60,
         "category_id":6,
         "product_id":6,
@@ -845,7 +840,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/LdrSK24/pen12.jpg",
         "product_detail":"95k gold purity and 2.067gram gross weight"
     },
-    // finger ring
     {
         "_id":72,
         "category_id":7,
@@ -954,7 +948,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/pWMcN7P/enr9.jpg",
         "product_detail":"95k gold purity and 4.182gram gross weight"
     },
-    // mangalsutra
     {
         "_id":81,
         "category_id":8,
@@ -1075,7 +1068,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/mtzWTCc/mag10.jpg",
         "product_detail":"22k gold purity and  8.650gram gross weight"
     },
-    // ring
     {
         "_id":91,
         "category_id":9,
@@ -1268,7 +1260,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/FXHb0Nh/ri16.jpg",
         "product_detail":"95k gold purity and 6.624gram gross weight"
     },
-    // pendent and set 
     {
         "_id":107,
         "category_id":10,
@@ -1377,7 +1368,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/fD6dZN5/set9.jpg",
         "product_detail":"22k gold purity and 44.193gram gross weight"
     },
-    // nose pin
     {
         "_id":116,
         "category_id":11,
@@ -1462,7 +1452,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/QCdFZ83/nose7.jpg",
         "product_detail":"22k gold purity and 8.147gram gross weight"
     },
-    // chain
     {
         "_id":123,
         "category_id":12,
@@ -1643,7 +1632,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/VJnMtVK/ch15.jpg",
         "product_detail":"95k gold purity and 6.547gram gross weight"
     }, 
-    //joy
     {
         "_id":138,
         "category_id":13,
@@ -1824,7 +1812,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/3196Lj0/joy15.jpg",
         "product_detail":"18k gold purity and 3.798gram gross weight"
     },
-    //drop of rediants
     {
         "_id":153,
         "category_id":14,
@@ -1908,8 +1895,7 @@ db.product.insert(
         "product_price": 21393,
         "product_image": "https://i.ibb.co/yR1SKHK/dr7.jpg",
         "product_detail":"18k gold purity and 4.235gram gross weight"
-    },     
-    //stunning
+    },    
     {
         "_id":160,
         "category_id":15,
@@ -2054,7 +2040,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/Zgd4kJn/st12.jpg",
         "product_detail":"18k gold purity and 6.354gram gross weight"
     },     
-    //rain
     {
         "_id":172,
         "category_id":16,
@@ -2127,7 +2112,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/1vnfQ6M/ry6.jpg",
         "product_detail":"18k gold purity and 52.301gram gross weight"
     },     
-    //dream
     {
         "_id":178,
         "category_id":17,
@@ -2212,7 +2196,6 @@ db.product.insert(
         "product_image": "https://i.ibb.co/4FQB4wT/sh7.jpg",
         "product_detail":"18k gold purity and 4.128gram gross weight"
     }, 
-    //color
     {
         "_id":185,
         "category_id":18,
@@ -2260,8 +2243,7 @@ db.product.insert(
         "product_price": 160448,
         "product_image": "https://i.ibb.co/DtL37hr/sh6.jpg",
         "product_detail":"18k gold purity and  7.342gram gross weight"
-    }, 
-    //wave 
+    },  
     {
         "_id":189,
         "category_id":19,

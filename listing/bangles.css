@@ -236,7 +236,23 @@ hr {
     float: left;
     font-family: Georgia;
 }
-
+@media screen and (min-device-width: 320px) and (max-device-width: 768px)  {
+#filterDiv {
+    height: auto ;
+    width: 100% !important;
+}
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 768px)  {
+.file1 {
+    width: 100%;
+    height: auto;
+}
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px)  {
+.file1 {
+    width: 47%;
+}
+}
 .filter-heading {
     position: relative;
     margin-left: 19px;

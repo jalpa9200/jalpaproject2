@@ -1,0 +1,105 @@
+#contentDiv {
+    /**height:1080px;**/
+    width: 80%;
+    margin-left: 2%;
+    /**border: 2px solid red;**/
+    float: left;
+    margin-bottom: 5%;
+}
+.file1 {
+    width: 29%;
+    height: 350px;
+    box-shadow: 5px 12px 20px #c4bbc0;
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+    border-radius: 5%;
+    background-color: gainsboro;
+    cursor: pointer;
+    padding: 1px 1px;
+}
+.file1:hover{
+    transform: scale(1.1);
+}
+.filecomponent1 {
+    width: 100%;
+    height: 220px;
+    float: left;
+}
+
+.fileComponent1>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6%;
+}
+.filecomponent2 {
+    height: 30%;
+    margin-top: 227px;
+}
+
+.filecomponent2 h3 {
+    margin-left: 2%;
+    font-size: 19px;
+    color: chocolate;
+}
+.filecomponent2 p {
+    float: left;
+    margin-left: 8%;
+    font-size: 12px;
+    margin-top: -5%;
+}
+.filecomponent2 input {
+    background-color: gainsboro;
+    float: right;
+    margin-top: -11%;
+}
+
+.filecomponent2 .price{
+    margin-left: 3%;
+    font-size: 18px;
+}
+
+.filecomponent2 .offer{
+    font-size: 15px;
+    float: left;
+    color: green;
+    margin-left: 3%;
+}
+#content {
+    width: 97%;
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 2%;
+
+}
+#filterDiv {
+    height: 780px;
+    width: 15%;
+    /**border: 2px solid gray;**/
+    float: left;
+    font-family: Georgia;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 768px)  {
+#filterDiv {
+    height: auto ;
+    width: 100% !important;
+}
+}
+.filter-heading {
+    position: relative;
+    margin-left: 19px;
+    color: #8f5978;
+}
+.cuisine {
+    line-height: 17px;
+    margin-top: 29px;
+}
+.text a{
+    color: #000000 !important;
+}
+.cuisine-headline {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 22px;
+}
