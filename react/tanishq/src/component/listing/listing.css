@@ -1,8 +1,8 @@
 #contentDiv {
-    /**height:1080px;**/
+    /* height:1080px; */
     width: 80%;
     margin-left: 2%;
-    /**border: 2px solid red;**/
+    /* border: 2px solid red; */
     float: left;
     margin-bottom: 5%;
 }
@@ -27,7 +27,7 @@
     float: left;
 }
 
-.fileComponent1>img {
+.filecomponent1>img {
     width: 100%;
     height: 100%;
     border-radius: 6%;
@@ -41,6 +41,7 @@
     margin-left: 2%;
     font-size: 19px;
     color: chocolate;
+    height: 42px;
 }
 .filecomponent2 p {
     float: left;
@@ -57,13 +58,16 @@
 .filecomponent2 .price{
     margin-left: 3%;
     font-size: 18px;
+    color: #212529;
+    padding-top: 0px;
 }
 
 .filecomponent2 .offer{
-    font-size: 15px;
+    font-size: 12px;
     float: left;
     color: green;
     margin-left: 3%;
+    margin-top: -3%;
 }
 #content {
     width: 97%;
@@ -75,7 +79,7 @@
 #filterDiv {
     height: 780px;
     width: 15%;
-    /**border: 2px solid gray;**/
+    /* border: 2px solid gray; */
     float: left;
     font-family: Georgia;
 }
@@ -103,3 +107,49 @@
     margin-left: 20px;
     font-size: 22px;
 }
+label {
+    display: flex;
+    margin-left: 1%;
+    line-height: 28px;
+    color: #b07f25;
+    margin: 1%;
+}
+.cuisine input{
+    margin: 8px;
+}
+#main1 {
+    width: 95%;
+    margin-left: 3%;
+}
+.pip5 button {
+    float: right;
+    margin-right: 2%;
+    font-size: 19px;
+    font-family: Georgia;
+    margin-top: -20px;
+    border-color: azure;
+}
+
+.pip5 button:hover {
+    background-color: #830047;
+    color: #f1db5e;
+}
+.pip5 button a{
+    color: #000000;
+    }
+    .pip5 button a:hover{
+        color: #f1db5e;
+    }
+    
+    hr {
+        margin-top: -3%;
+    }
+    .loader img{
+        margin-left: 20%;
+        height: 60%;
+        width: 50%;
+    }
+    .loader h2{
+        margin-left: 40%;
+        margin-top: 5%;
+    }

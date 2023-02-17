@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import './Header.css';
 
-const url = "http://localhost:5100/api/auth/userinfo";
+const url = "http://localhost:5000/api/auth/userinfo";
 
 class Header extends Component {
 
@@ -30,7 +30,7 @@ class Header extends Component {
                     <Link to="/" className="btn btn-success">
                         <span className="glyphicon glyphicon-user"></span> Hi {data.name}
                     </Link> &nbsp;
-                    <button onClick={this.handleLogout} className="btn btn-danger">
+                    <button onClick={()=>this.handleLogout()} className="btn btn-danger">
                         <span className="glyphicon glyphicon-log-out"></span> Logout
                     </button>
                 </div>
@@ -40,9 +40,14 @@ class Header extends Component {
         } else {
             return (
                 <div id="social">
-
-                </div>
-            )
+                    <Link to="/login" className="btn btn-success">
+                                            <span className="glyphicon glyphicon-log-in"></span> Login
+                                        </Link> &nbsp;
+                                        <Link to="/register" className="btn btn-danger">
+                                            <span className="glyphicon glyphicon-user"></span> Register
+                                        </Link>
+                                    </div>
+                                )
         }
 
     }
@@ -53,7 +58,7 @@ class Header extends Component {
                 <header className="header" style={{ marginBottom: "unset" }}>
                     <nav className="navbar navbar-light header" id="nav">
                         <div className="container-fluid">
-                            <a className="navbar-brand" href="#">
+                            <Link className="navbar-brand" to="/" href="#">
                                 <img
                                     src="https://i.ibb.co/M1FvV6S/logo.png"
                                     alt="logo"
@@ -61,9 +66,10 @@ class Header extends Component {
                                     height={70}
                                     className="d-inline-block align-text-top"
                                 />
-                            </a>
+                            </Link>
+                            <Link className="btn btn-success home" to="/">Home</Link>
                             <div className="align-self-center mx-auto">
-                                <form className="d-flex">
+                                {/* <form className="d-flex">
                                     <input
                                         className="form-control me-2 pink2"
                                         type="search"
@@ -74,42 +80,43 @@ class Header extends Component {
                                     <button className="btn try" type="submit">
                                         Search
                                     </button>
-                                </form>
+                                </form> */}
                             </div>
-                            <div id="social">
+                            {/* <div id="social">
                                 <Link to="/login" className="btn btn-success">
                                     <span className="glyphicon glyphicon-log-in"></span> Login
                                 </Link> &nbsp;
                                 <Link to="/register" className="btn btn-danger">
                                     <span className="glyphicon glyphicon-user"></span> Register
                                 </Link>
-                            </div>
-
+                            </div> */}
+                            {this.conditionalHeader()}
                             {/*geolocation*/}
-                            <div className="location">
+                            {/* <div className="location">
                                 <img
-                                    onclick="geolocation()"
-                                    img=""
-                                    src="https://i.ibb.co/ngpCfkG/we3.png"
+                                  onClick={()=>this.geolocation()}
+                                    // onclick="geolocation()"
+
+                                    src="https://i.ibb.co/ngpCfkG/we3.png" alt=""
                                 />
                                 <p id="out" style={{ color: "#ffffff" }} />
                                 <p id="weatherOut" style={{ color: "#ffffff" }} />
-                            </div>
+                            </div> */}
 
 
                             {/*light-dark*/}
-                            <div className="theme-container shadow-light">
+                            {/* <div className="theme-container shadow-light">
                                 <img
                                     id="theme-icon"
                                     src="https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg"
                                     alt="ERR"
                                 />
-                            </div>
+                            </div> */}
                         </div>
                     </nav>
                     <div id="coupon">
                         <button
-                            onclick="closeCoupon()"
+                            onClick={()=>this.closeCoupon()}
                             className="btn btn-sm"
                             style={{ float: "right", opacity: 1 }}>
 
@@ -137,7 +144,7 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
-                    {this.conditionalHeader()}
+                    {/* {this.conditionalHeader()} */}
                 </header>
             </React.Fragment>
         )

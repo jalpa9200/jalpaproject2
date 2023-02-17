@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Header from '../Header';
 
-const url = "http://localhost:5100/api/auth/register";
+const url = "http://localhost:5000/api/auth/register";
 
 class Register extends Component{
 
@@ -43,24 +43,24 @@ class Register extends Component{
                         </div>
                         <div className="panel-body">
                             <div className="row">
-                                <div class="form-group col-md-6">
+                                <div className="form-group col-md-6">
                                     <label for="firstname">FirstName</label>
-                                    <input type="text" name="name" class="form-control"
+                                    <input type="text" name="name" className="form-control"
                                     value={this.state.name} onChange={this.handleChange}  />
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div className="form-group col-md-6">
                                     <label for="email">Email</label>
-                                    <input type="text" name="email" class="form-control"
+                                    <input type="text" name="email" className="form-control"
                                     value={this.state.email} onChange={this.handleChange}  />
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div className="form-group col-md-6">
                                     <label for="password">Password</label>
-                                    <input type="text" name="password" class="form-control"
+                                    <input type="text" name="password" className="form-control"
                                     value={this.state.password} onChange={this.handleChange}  />
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div className="form-group col-md-6">
                                     <label for="phone">Phone</label>
-                                    <input type="text" name="phone" class="form-control"
+                                    <input type="text" name="phone" className="form-control"
                                     value={this.state.phone} onChange={this.handleChange}  />
                                 </div>
                             </div>

@@ -1,72 +1,64 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom'
 
 const ListingDisplay =(props) => {
 
-    const renderData = ({listData}) => {
+    const renderData = ({listData}) => { 
         if(listData){
-            if(listData.length > 0 ){
-                return listData.map((item) => {
+            if(listData.length > 0){
+                return listData.map((items)=>{
                     return(
-                        <div className="item" key={item._id}>
-                            <div className="row">
-                                <div className="col-md-5">
-                                    <img src={item.restaurant_thumb} className="Image"
-                                    alt={item.restaurant_name}/>
+                        <div key={items._id}>
+                    
+                    <Link to={`/Details/${items.p_no}`}>
+                           
+                           <div className="file1">
+                                <div className="filecomponent1">
+                                    <img src={items.product_image} alt="" />
                                 </div>
-                                <div className="col-md-7">
-                                    <div className="hotel_name">
-                                        <Link to={`/details?restid=${item.restaurant_id}`}>
-                                            {item.restaurant_name}
-                                        </Link>
-                                        <div className="city_name">{item.address}</div>
-                                        <div className="city_name">{item.rating_text}</div>
-                                        <div className="city_name">Rs. {item.cost}</div>
-                                        <div className="labelDiv">
-                                            <span className="label label-primary">
-                                                {item.mealTypes[0].mealtype_name}
-                                            </span> &nbsp;
-                                            <span className="label label-info">
-                                                {item.mealTypes[1].mealtype_name}
-                                            </span>
-                                        </div>
-                                        <div className="labelDiv">
-                                            <span className="label label-danger">
-                                                {item.cuisines[0].cuisine_name}
-                                            </span> &nbsp;
-                                            <span className="label label-warning">
-                                                {item.cuisines[1].cuisine_name}
-                                            </span>
-                                        </div>
+                                <div className="filecomponent2">
+                                    <hr />
+                                    <h3>{items.product_name}</h3>
+                                    <h2 className="price">Price: ₹ {items.product_price}</h2>
+                                    <h1 className="offer">{items.product_type} | {items.product_category}</h1>
+                                    <div className="pip5">
+                                    <button><Link to={`/Details/${items.p_no}`}>Explore Now</Link></button>
                                     </div>
+       
                                 </div>
                             </div>
+                    
+                            </Link>
                         </div>
+                        
                     )
                 })
 
             }else{
                 return(
                     <div>
-                        <h2>No Data As per filter</h2>
+                        <h2>No Data Available As Per Filter..</h2>
                     </div>
                 )
             }
         }else{
             return(
-                <div>
-                    <img src="/images/loader.gif" alt="loader"/>
-                    <h2>Loading....</h2>
-                </div>
+                <div className='loader'>
+                     <img src="/images/loader.gif" alt="loader"/>
+                    <h2>Loading..</h2>
+              </div>
             )
         }
     }
 
     return(
-        <div id="content">
+        <>
+        <div id="contentMain">
             {renderData(props)}
         </div>
+        </>
     )
 }
 
 export default ListingDisplay;
+

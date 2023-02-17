@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import './Search.css';
+import Product from './Product'
 
-// const lurl = "https://zomatoapi.onrender.com/location"
-// const rurl = "https://zomatoapi.onrender.com/restaurant?stateId="
+const lurl="https://jewelleryapi.onrender.com/Allproduct";
 
-// const lurl = "http://localhost:9800/category"
-// const rurl = "http://localhost:9800/product?productId="
 class Search extends Component {
+    constructor(){
+        super ()
+
+        this.state={
+            QuickProduct:''
+              }
+    }
 
     render() {
         return (
@@ -93,216 +98,14 @@ class Search extends Component {
                     <div className="catego">
                         <h4>Shop By categories</h4>
                     </div>
-                    <div className="categomain">
-                        <div className="categocomponent1">
-                            <div className="row row-cols-1 row-cols-md-6 g-7">
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/XzhppyK/bangels.png"
-                                            className="card-img-top catecom2"
-                                            alt="bangles"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Bangels</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/bangles.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/BNTH5hj/earing.jpg"
-                                            className="card-img-top catecom2"
-                                            alt="earing"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Earring</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/earring.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/z4kXRYK/gold-coin.jpg"
-                                            className="card-img-top catecom2"
-                                            alt="coin"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Gold Coin</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/coin.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/FJLMfBQ/necklace.jpg"
-                                            className="card-img-top catecom2"
-                                            alt="necklace"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Necklace</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/necklace.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/LPJyK77/bracelets.jpg"
-                                            className="card-img-top catecom2"
-                                            alt="bracelets"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Bracelets</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/bracelet.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/TB0MMcs/pendants.jpg"
-                                            className="card-img-top catecom2"
-                                            alt="pendants"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Pendants</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/pendant.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/2P278Qb/engagement-ring.jpg"
-                                            className="card-img-top catecom2"
-                                            alt="engagement-ring"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Engagement-Ring</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/engmentring.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/7GqfX5D/mangalsutra.jpg"
-                                            className="card-img-top catecom2"
-                                            alt="mangalsutra"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Mangalsutra</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/mangalsutra.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/zF9k4W2/ring.jpg"
-                                            className="card-img-top catecom2"
-                                            alt="ring"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Ring</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/ring.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/6H9Zjm6/pendant-errings-set.png"
-                                            className="card-img-top catecom2"
-                                            alt="pendant errings set"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Pendant Earring Set</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/pendantearset.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/R9QXX8M/nose-pin.jpg"
-                                            className="card-img-top catecom2"
-                                            alt="nose pin"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Nose Pin</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/nosepin.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <div className="card cate1">
-                                        <img
-                                            src="https://i.ibb.co/HCp2s9F/gold-chain.jpg"
-                                            className="card-img-top catecom2 image"
-                                            alt="gold chain"
-                                        />
-                                        <div className="card-body com2">
-                                            <h5 className="card-title">Gold Chain</h5>
-                                            <div className="middle">
-                                                <div className="text">
-                                                    <a href="listing/goldchain.html">Explore</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="categocomponent1">
+                
+                            <div class="col">
+                    <Product productData={this.state.QuickProduct}/>
                     </div>
+                
+                    </div>
+
                 </div>
                 
                 <div id="veriouscategories">
@@ -365,7 +168,8 @@ class Search extends Component {
                                         The enjoy of Dressing
                                         <button style={{ border: "none", float: "right" }}>
                                             <div className="text">
-                                                <a href="listing/joy.html">Explore</a>
+                                                {/* <a href="listing/joy.html">Explore</a> */}
+                                                <a>Explore</a>
                                             </div>
                                         </button>
                                     </h5>
@@ -385,7 +189,8 @@ class Search extends Component {
                                         Drop-of-radiance
                                         <button style={{ border: "none", float: "right" }}>
                                             <div className="text">
-                                                <a href="listing/dropofradiance.html">Explore</a>
+                                                {/* <a href="listing/dropofradiance.html">Explore</a> */}
+                                                <a>Explore</a>
                                             </div>
                                         </button>
                                     </h5>
@@ -405,7 +210,8 @@ class Search extends Component {
                                         Stunning every Ear
                                         <button style={{ border: "none", float: "right" }}>
                                             <div className="text">
-                                                <a href="listing/stunning.html">Explore</a>
+                                            <a>Explore</a>
+                                                {/* <a href="listing/stunning.html">Explore</a> */}
                                             </div>
                                         </button>
                                     </h5>
@@ -422,13 +228,13 @@ class Search extends Component {
     }
 
     //api calling on page load
-    // componentDidMount() {
-    //     fetch(lurl, { method: "GET" })
-    //         .then((res) => res.json())
-    //         .then((data) => {
-    //             this.setState({ location: data })
-    //         })
-    // }
+    componentDidMount() {
+        fetch(lurl, { method: "GET" })
+            .then((res) => res.json())
+            .then((data) => {
+                this.setState({ QuickProduct: data })
+            })
+    }
 }
 
 export default Search;

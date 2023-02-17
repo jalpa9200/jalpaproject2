@@ -8,7 +8,7 @@ class QuickSearch extends Component {
     //     super()
 
     //     this.state={
-    //         mealType:''
+    //         productType:''
     //     }
     // }
 
@@ -115,12 +115,12 @@ class QuickSearch extends Component {
         )
     }
 
-    // 
+    
     // componentDidMount(){
     //     fetch(qurl,{method:'GET'})
     //     .then((res) => res.json())
     //     .then((data) => {
-    //         this.setState({mealType:data})
+    //         this.setState({productType:data})
     //     })
     // }
 }

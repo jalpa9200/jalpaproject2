@@ -54,6 +54,9 @@ h4:after {
     border: 1px solid #e6dede;
     margin: 3% 0%;
     box-shadow: 5px 12px 20px #c4bbc0;
+     width:15%;
+    margin-left:1%; 
+    display: inline-block; 
 }
 
 .cate1:hover {
@@ -70,6 +73,7 @@ h4:after {
 
 h5.card-title {
     font-size: 16px;
+    color: #212529;
 }
 
 .image {

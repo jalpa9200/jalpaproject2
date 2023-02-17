@@ -52,13 +52,13 @@ app.get('/product',(req,res) =>{
 
 
 app.get('/product',(req,res)=>{
-    let productId = Number(req.query.productId);
-    let categoryId = Number(req.query.categoryId)
+    let p_no = Number(req.query.p_no);
+    let productId = Number(req.query.productId)
     let query = {}
-    if(stateId){
-        query = {state_id:stateId}
-    }else if(categoryId){
-        query = {"jewelleryTypes.category_id":categoryId}
+    if(p_no){
+        query = {p_no:p_no}
+    }else if(productId){
+        query = {product_id:productId}
     }else{
         query = {}
     }
@@ -170,17 +170,17 @@ app.get('/details/:proId',(req,res)=>{
 
 
 //placeorder
-// app.post('/productItem',(req,res) => {
-//     if(Array.isArray(req.body.id)){
-//         db.collection('product').find({product_id:{$in:req.body.id}}).toArray((err,result) => {
-//             if(err) throw err;
-//             res.send(result)
-//         })
-//     }else{
-//         res.send('Invalid Input')
-//     }
+app.post('/productItem',(req,res) => {
+    if(Array.isArray(req.body.id)){
+        db.collection('product').find({p_no:{$in:req.body.id}}).toArray((err,result) => {
+            if(err) throw err;
+            res.send(result)
+        })
+    }else{
+        res.send('Invalid Input')
+    }
     
-// })
+})
 
 //placeorder
 app.post('/placeOrder',(req,res) => {
@@ -209,7 +209,7 @@ app.get('/orders',(req,res)=>{
 app.put('/updateOrder/:id',(req,res) => {
     let oid = Number(req.params.id);
     db.collection('order').updateOne(
-        {order_id:oid},
+        {id:oid},
         {
             $set:{
                 "status":req.body.status,
